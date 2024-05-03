@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "f9945963-a224-4529-b022-81dc866262f6",
+		"name": "Madeira - Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17378029"
+	},
+	"item": [
+		{
+			"name": "Micro Service",
+			"item": [
+				{
+					"name": "Veracidade Nota",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization-token-service",
+								"value": "F52627B4F08D09E5CE65B810AA57925E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cnpj\": 10490181000569\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/veracidade-nota",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"veracidade-nota"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
